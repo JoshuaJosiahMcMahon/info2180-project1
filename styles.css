@@ -1,11 +1,237 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+
+header>div{
+    display: flex;
+}
+
+header>div>nav>ul{
+    display: flex;
+}
+
+header>div>nav>ul>li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+header>div>nav>ul>li>a{
+    text-decoration: none;
+    color: #6b7280;
+}
+
+header>div>nav>ul>li>a:hover{
+    color: #5A67D8;
+}
+
+header{
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 18px;
+}
+
+header>div>h1{
+    margin: 0;
+    padding: 0 15px;
+    font-size: 24px;
+    line-height: 40px;
+    flex-grow: 1;
+}
+
+.overview-hero-image{
+    float: left;
+    margin: 0 1.5%;
+    width: 35%;
+}
+
+.overview-hero-image > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+    vertical-align: top;
+}
+
+.overview-hero-text{
+    float: right;
+    margin: 0 1.5%;
+    width: 58%;
+}
+
+.overview-hero-text > *:first-child {
+    margin-top: 100px;
+}
+
+.overview-hero{
+    display: block;
+    overflow: auto;
+    margin-bottom: 20px;
+    background-color: #E2E8F0;
+}
+
+.card > img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 180px;
+    margin: 30px auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+}
+
+.cards > .card {
+    border: 1px solid #A0AEC0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    margin-bottom: 30px;
+
+}
+
+.cards > .card > .card-body {
+    padding: 16px 18px 18px;
+}
+
+
+.cards > .card > .card-body > h3 {
+    margin-top: 0;
+    color: #48BB78;
+    font-size: 21px;
+
+}
+
+
+.testing{
+    background-color: #4A5568;
+    color: white;
+}
+
+.testing > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 50px 50px;
+
+}
+
+.testing-description {
+    flex: 1 1 auto;
+    margin: 0;
+}
+
+.cta {
+    flex: 0 0 auto;
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    background-color: #48BB78;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.cta > a {
+    color: white;
+    text-decoration: none;
+}
+
+.cta > a:hover {
+    text-decoration: underline;
+}
+
+.stories > .container > article > img {
+    display: block;
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.stories > .container > article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stories > .container > h2 {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    color: #5A67D8;
+    font-size: 18px;
+}
+
+.article-body > p > a{
+    color: #5A67D8;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.newsletter > .container {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.newsletter > .container > form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter > .container > form > .btn{
+    margin-left: 10px;
+    background-color: #5A67D8;
+    padding: 20px 32px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+.newsletter .message {
+    margin-top: 6px;
+    text-align: center;
+}
+
+.form-group > input{
+    padding: 20px;
+    border: 1px solid #CBD5E0;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.learn-about > .container > h2{
+    color: #48BB78;
+    font-size: 24px;
+}
+
+footer {
+    background-color: #4A5568;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+.newsletter {
+    background-color: #48BB78;
+    color: white;
 }
